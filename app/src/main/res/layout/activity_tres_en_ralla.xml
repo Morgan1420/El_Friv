@@ -6,11 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".TresEnRalla">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="194dp"
-        tools:layout_editor_absoluteY="273dp" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="93dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/redcross"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="189dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
