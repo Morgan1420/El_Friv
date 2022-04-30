@@ -19,7 +19,7 @@ class MinigameSelector : AppCompatActivity() {
 
         val btnWordle = findViewById<Button>(R.id.btnWordle)
 
-        btnTresEnRalla.setOnClickListener {
+        btnWordle.setOnClickListener {
             val intent = Intent(this@MinigameSelector, Wordle::class.java)
             startActivity(intent)
         }
