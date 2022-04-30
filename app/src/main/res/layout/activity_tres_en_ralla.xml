@@ -170,17 +170,17 @@
     <TextView
         android:id="@+id/txtTornDe"
         android:layout_width="360dp"
-        android:layout_height="72dp"
-        android:layout_marginTop="140dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="72dp"
         android:fontFamily="serif-monospace"
 
         android:text="Torn de: "
         android:textAlignment="textStart"
         android:textColor="#191717"
-        android:textSize="60sp"
+        android:textSize="40sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.254"
+        app:layout_constraintHorizontal_bias="0.431"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -428,7 +428,7 @@
         android:layout_marginTop="72dp"
         android:fontFamily="serif-monospace"
         android:text=""
-        android:textSize="75sp"
+        android:textSize="48sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
