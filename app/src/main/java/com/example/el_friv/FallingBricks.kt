@@ -20,7 +20,16 @@ class FallingBricks : AppCompatActivity() {
         val leftBtn = findViewById<Button>(R.id.btnLeft)
 
         val player = findViewById<ImageView>(R.id.player)
+        // HarmfullObjects
         val harmfullObject1 = findViewById<ImageView>(R.id.harmfullObject1)
+        val harmfullObject2 = findViewById<ImageView>(R.id.harmfullObject2)
+        val harmfullObject3 = findViewById<ImageView>(R.id.harmfullObject3)
+        val harmfullObject4 = findViewById<ImageView>(R.id.harmfullObject4)
+        val harmfullObject5 = findViewById<ImageView>(R.id.harmfullObject5)
+        val harmfullObject6 = findViewById<ImageView>(R.id.harmfullObject6)
+        val harmfullObject7 = findViewById<ImageView>(R.id.harmfullObject7)
+        val harmfullObject8 = findViewById<ImageView>(R.id.harmfullObject8)
+
 
         var xMovement = 400.0f
         val fallMovement = 200.0f
