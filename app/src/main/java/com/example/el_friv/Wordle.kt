@@ -9,3 +9,4 @@ class Wordle : AppCompatActivity() {
         setContentView(R.layout.activity_wordle)
     }
 }
+
