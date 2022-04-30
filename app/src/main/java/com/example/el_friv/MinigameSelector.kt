@@ -12,6 +12,7 @@ class MinigameSelector : AppCompatActivity() {
 
         val btnTresEnRalla = findViewById<Button>(R.id.btnTresEnRaya)
         val btnFallingBricks = findViewById<Button>(R.id.btnFallingBricks)
+        val btnFlopyPenguin = findViewById<Button>(R.id.btnFlopyPenguin)
 
 
         btnTresEnRalla.setOnClickListener {
@@ -21,6 +22,11 @@ class MinigameSelector : AppCompatActivity() {
 
         btnFallingBricks.setOnClickListener {
             val intent = Intent(this@MinigameSelector, FallingBricks::class.java)
+            startActivity(intent)
+        }
+
+        btnFlopyPenguin.setOnClickListener {
+            val intent = Intent(this@MinigameSelector, FlappyBird::class.java)
             startActivity(intent)
         }
     }

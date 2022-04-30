@@ -2,6 +2,7 @@ package com.example.el_friv
 
 import android.os.Bundle
 import android.os.Handler
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
@@ -31,8 +32,20 @@ class FallingBricks : AppCompatActivity() {
         val harmfullObject8 = findViewById<ImageView>(R.id.harmfullObject8)
 
 
+
+
         var xMovement = 400.0f
         val fallMovement = 200.0f
+
+        var ho1_movement = 0.0f;
+        var ho2_movement = 0.0f;
+        var ho3_movement = 0.0f;
+        var ho4_movement = 0.0f;
+        var ho5_movement = 0.0f;
+        var ho6_movement = 0.0f;
+        var ho7_movement = 0.0f;
+        var ho8_movement = 0.0f;
+
 
         //functions
         fun playerMovement(direction: Int){
@@ -46,13 +59,14 @@ class FallingBricks : AppCompatActivity() {
         fun objectFall(objecte: ImageView, extraSpeed: Float){
             objecte.translationY += fallMovement * extraSpeed
         }
-        fun spawnObjects(objecte: ImageView, i: Long){
+        fun spawnObjects(_objecte: ImageView, i: Long){
+            _objecte.setVisibility(View.VISIBLE)
 
             if(i < 0)
-                objecte.translationX = (i * -1) % 1000.0f
+                _objecte.translationX = (i * -1) % 1000.0f
             else
-                objecte.translationX = i % 1000.0f
-            objecte.translationY = 10.0f
+                _objecte.translationX = i % 1000.0f
+            _objecte.translationY = 0.0f
         }
 
         // Buttons
@@ -72,19 +86,53 @@ class FallingBricks : AppCompatActivity() {
             var nextLevel = false
             var i:Long = 0;
 
-            spawnObjects(harmfullObject1, Random.nextLong())
+            harmfullObject1.setVisibility(View.VISIBLE)
+
+            if(i < 0)
+                harmfullObject1.translationX = (i * -1) % 1000.0f
+            else
+                harmfullObject1.translationX = i % 1000.0f
+            harmfullObject1.translationY = 0.0f
 
             while(!nextLevel) {
 
                 // Actualitzem la posició objectes
                 val handler = Handler()
                 handler.postDelayed({
-                    objectFall(harmfullObject1, 0.5f)
+                    objectFall(harmfullObject1, 1.0f)
+                    ho1_movement += fallMovement * 1.0f
                 }, 1000 * i)
 
+                //
+                if(ho1_movement > 100)
+                    if(i < 0)
+                        harmfullObject1.translationX = (i * -1) % 1000.0f
+                    else
+                        harmfullObject1.translationX = i % 1000.0f
+                    harmfullObject1.translationY = 0.0f
 
                 // comprovem si no hem augmentat el nivell
                 if (i * 1000 > 10000)
+                    nextLevel = true;
+
+                i++
+            }
+
+            spawnObjects(harmfullObject2, Random.nextLong())
+            nextLevel = false
+            while(!nextLevel) {
+
+                // Actualitzem la posició objectes
+                val handler = Handler()
+                handler.postDelayed({
+                    objectFall(harmfullObject1, 1.0f)
+                }, 1000 * i)
+                handler.postDelayed({
+                    objectFall(harmfullObject2, 1.0f)
+                }, 1000 * i)
+
+                // comprovem si no hem augmentat el nivell
+                if (i * 1000 > 20000)
                     nextLevel = true;
 
                 i++

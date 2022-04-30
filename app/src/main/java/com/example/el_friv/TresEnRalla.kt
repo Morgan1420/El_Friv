@@ -105,6 +105,7 @@ class TresEnRalla : AppCompatActivity() {
 
             if(guany)
             {
+                text_torn.setVisibility(View.INVISIBLE)
                 if(torn==true)
                     text_guanyador.setText("Ha guanyat: O")
                 else

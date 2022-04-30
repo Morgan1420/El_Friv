@@ -19,13 +19,14 @@
         android:id="@+id/player"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:background="#00C14242"
         android:foregroundTint="#CC2323"
         android:tint="#25C120"
         android:translationX="400px"
         app:layout_constraintBottom_toTopOf="@+id/imageGround"
-        app:srcCompat="@drawable/ic_launcher_foreground"
-        tools:layout_editor_absoluteX="140dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <Button
         android:id="@+id/btnLeft"
@@ -57,66 +58,7 @@
         android:layout_height="51dp"
         android:layout_marginTop="100dp"
         android:translationY="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/red_circle_svg" />
-
-    <ImageView
-        android:id="@+id/harmfullObject2"
-        android:layout_width="56dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="100dp"
-        android:translationY="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/red_circle_svg" />
-
-    <ImageView
-        android:id="@+id/harmfullObject3"
-        android:layout_width="56dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="100dp"
-        android:translationY="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/red_circle_svg" />
-
-    <ImageView
-        android:id="@+id/harmfullObject4"
-        android:layout_width="56dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="100dp"
-        android:translationY="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/red_circle_svg" />
-
-    <ImageView
-        android:id="@+id/harmfullObject5"
-        android:layout_width="56dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="100dp"
-        android:translationY="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/red_circle_svg" />
-
-    <ImageView
-        android:id="@+id/harmfullObject6"
-        android:layout_width="56dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="100dp"
-        android:translationY="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/red_circle_svg" />
-
-    <ImageView
-        android:id="@+id/harmfullObject7"
-        android:layout_width="56dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="100dp"
-        android:translationY="100dp"
+        android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/red_circle_svg" />
@@ -125,8 +67,75 @@
         android:id="@+id/harmfullObject8"
         android:layout_width="56dp"
         android:layout_height="51dp"
-        android:layout_marginTop="100dp"
-        android:translationY="100dp"
+        android:layout_marginTop="32dp"
+        android:translationY="500px"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/red_circle_svg" />
+
+    <ImageView
+        android:id="@+id/harmfullObject2"
+        android:layout_width="56dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:translationY="500px"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/red_circle_svg" />
+
+    <ImageView
+        android:id="@+id/harmfullObject3"
+        android:layout_width="56dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:translationY="500px"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/red_circle_svg" />
+
+    <ImageView
+        android:id="@+id/harmfullObject4"
+        android:layout_width="56dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:translationY="500px"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/red_circle_svg" />
+
+    <ImageView
+        android:id="@+id/harmfullObject5"
+        android:layout_width="56dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:translationY="500px"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/red_circle_svg" />
+
+    <ImageView
+        android:id="@+id/harmfullObject6"
+        android:layout_width="56dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:translationY="500px"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/red_circle_svg" />
+
+    <ImageView
+        android:id="@+id/harmfullObject7"
+        android:layout_width="56dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:translationY="500px"
+        android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/red_circle_svg" />
