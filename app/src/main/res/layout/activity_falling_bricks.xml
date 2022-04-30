@@ -6,4 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".FallingBricks">
 
+    <ImageView
+        android:id="@+id/imageGround"
+        android:layout_width="500dp"
+        android:layout_height="150dp"
+        android:background="#232020"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00C14242"
+        android:foregroundTint="#CC2323"
+        android:tint="#25C120"
+        android:translationX="400px"
+        app:layout_constraintBottom_toTopOf="@+id/imageGround"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:layout_editor_absoluteX="140dp" />
+
+    <Button
+        android:id="@+id/btnLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="48dp"
+        android:text="Left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageGround"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="48dp"
+        android:text="Right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageGround"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/harmfullObject1"
+        android:layout_width="56dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="100dp"
+        android:translationY="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/red_circle_svg" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

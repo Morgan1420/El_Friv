@@ -11,10 +11,16 @@ class MinigameSelector : AppCompatActivity() {
         setContentView(R.layout.activity_minigame_selector)
 
         val btnTresEnRalla = findViewById<Button>(R.id.btnTresEnRaya)
+        val btnFallingBricks = findViewById<Button>(R.id.btnFallingBricks)
 
 
         btnTresEnRalla.setOnClickListener {
             val intent = Intent(this@MinigameSelector, TresEnRalla::class.java)
+            startActivity(intent)
+        }
+
+        btnFallingBricks.setOnClickListener {
+            val intent = Intent(this@MinigameSelector, FallingBricks::class.java)
             startActivity(intent)
         }
     }
