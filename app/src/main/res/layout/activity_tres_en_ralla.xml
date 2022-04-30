@@ -6,12 +6,65 @@
     android:layout_height="match_parent"
     tools:context=".TresEnRalla">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="93dp"
-        android:layout_height="82dp"
-        app:srcCompat="@drawable/redcross"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="189dp" />
 
+    <ImageView
+        android:id="@+id/imgTauler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.757"
+        app:srcCompat="@drawable/tauler_tic_tac_toe" />
+
+    <TextView
+        android:id="@+id/txtTornDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Torn de: "
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="118dp" />
+
+    <Button
+        android:id="@+id/btn_00"
+        android:layout_width="98dp"
+        android:layout_height="106dp"
+        android:background="#006200EE"
+        android:backgroundTint="#00FFFFFF"
+        android:text=""
+        app:iconSize="175px"
+        app:iconTint="#E11313"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.392" />
+
+    <ImageView
+        android:id="@+id/image_00_x"
+        android:layout_width="92dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_00"
+        app:layout_constraintEnd_toEndOf="@+id/btn_00"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_00"
+        app:layout_constraintTop_toTopOf="@+id/btn_00"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/redcross" />
+
+    <ImageView
+        android:id="@+id/image_00_o"
+        android:layout_width="121dp"
+        android:layout_height="122dp"
+        android:tint="#40A3F8"
+        app:layout_constraintBottom_toBottomOf="@+id/image_00_x"
+        app:layout_constraintEnd_toEndOf="@+id/btn_00"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="@+id/btn_00"
+        app:layout_constraintTop_toTopOf="@+id/btn_00"
+        app:srcCompat="@drawable/red_circle_svg" />
 </androidx.constraintlayout.widget.ConstraintLayout>
