@@ -164,19 +164,19 @@
         app:layout_constraintVertical_bias="0.757"
         app:srcCompat="@drawable/tauler_tic_tac_toe" />
 
+
     <TextView
         android:id="@+id/txtTornDe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:text="Torn de: "
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="118dp"
 
-        />
-
-
-
-
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/image_00_x"
@@ -414,4 +414,16 @@
         app:layout_constraintTop_toTopOf="@+id/btn_22"
         app:layout_constraintVertical_bias="0.484"
         app:srcCompat="@drawable/red_circle_svg" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text=""
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.679"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
