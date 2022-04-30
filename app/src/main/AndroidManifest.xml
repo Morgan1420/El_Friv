@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.El_Friv">
         <activity
+            android:name=".FallingBricks"
+            android:exported="false" />
+        <activity
             android:name=".TresEnRalla"
             android:exported="false" />
         <activity
