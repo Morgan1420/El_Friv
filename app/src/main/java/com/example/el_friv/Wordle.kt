@@ -415,17 +415,19 @@ class Wordle : AppCompatActivity() {
                 }
             }
         }
-        if((torns <5) && !guanyat) {
+
             button1.setOnClickListener()
             {
-                game()
-                torns++
+                if((torns <5) && !guanyat) {
+                    game()
+                    torns++
+                }
             }
         }
 
-        }
-
     }
+
+
 
 
 
