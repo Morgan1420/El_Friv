@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".MinigameSelector">
 
+    <Button
+        android:id="@+id/btnWordle"
+        android:layout_width="500px"
+        android:layout_height="200px"
+        android:text="Wordle"
+        android:textSize="50px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.567" />
+
     <TextView
         android:id="@+id/textSelectMinigame"
         android:layout_width="wrap_content"

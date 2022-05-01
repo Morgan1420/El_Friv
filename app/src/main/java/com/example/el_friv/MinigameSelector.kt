@@ -12,10 +12,17 @@ class MinigameSelector : AppCompatActivity() {
 
         val btnTresEnRalla = findViewById<Button>(R.id.btnTresEnRaya)
 
-
         btnTresEnRalla.setOnClickListener {
             val intent = Intent(this@MinigameSelector, TresEnRalla::class.java)
             startActivity(intent)
         }
+
+        val btnWordle = findViewById<Button>(R.id.btnWordle)
+
+        btnWordle.setOnClickListener {
+            val intent = Intent(this@MinigameSelector, Wordle::class.java)
+            startActivity(intent)
+        }
+
     }
 }
